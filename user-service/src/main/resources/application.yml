@@ -1,0 +1,14 @@
+server:
+  port: ${port:10087}
+spring:
+  application:
+    name: user-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    # 更倾向使用ip地址，而不是host名
+    prefer-ip-address: true
+    # ip地址
+    ip-address: 127.0.0.1
